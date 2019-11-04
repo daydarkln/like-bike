@@ -1,0 +1,24 @@
+.networks {
+  width: 100%;
+
+  &__list .ant-card {
+    border: none;
+  }
+
+  &__list .ant-card:hover,
+  &__list .active .ant-card {
+    border-left: 3px solid rgba(52, 52, 255, 1);
+  }
+
+  &__list {
+    height: 100vh;
+    overflow: auto;
+  }
+
+  &__stations {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

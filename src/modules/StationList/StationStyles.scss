@@ -1,0 +1,42 @@
+.stations {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__list {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+  }
+
+  &__list .ant-empty {
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 65px);
+  }
+
+  &__item {
+    margin-bottom: 15px;
+  }
+
+  &__item.ant-card:hover,
+  &__item.stations__item--is-active {
+    border-left: 3px solid rgba(52, 52, 255, 1);
+  }
+
+  &__header {
+    min-height: 40px;
+    width: 100%;
+    background: rgba(52, 52, 255, 1);
+    padding: 10px;
+
+    h2,
+    p {
+      color: white;
+    }
+  }
+}
